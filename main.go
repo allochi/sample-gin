@@ -30,7 +30,6 @@ func main() {
 	secrets.GET("/accounts", handlers.GetAccounts)
 
 	// Postgrest proxy
-	// This is something
 	router.Any("/psql/*url", handlers.PostgrestProxy)
 
 	router.Run(":3300")

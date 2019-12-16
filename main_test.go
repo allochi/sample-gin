@@ -35,6 +35,6 @@ func TestGetTenders(t *testing.T) {
 
 	assert.Equal(t, 200, w.Code)
 
-	exp := "These is tenders!"
+	exp := "These are tenders!"
 	assert.Equal(t, exp, w.Body.String())
 }
